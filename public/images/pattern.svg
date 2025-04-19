@@ -1,1 +1,9 @@
-404: Not Found
+<svg width="300" height="150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="waves" x="0" y="0" width="100" height="50" patternUnits="userSpaceOnUse">
+      <path d="M0 25C 20 10, 30 40, 50 25C 70 10, 80 40, 100 25" stroke="#0F766E" stroke-width="2" fill="none" opacity="0.2" />
+      <path d="M0 25C 20 40, 30 10, 50 25C 70 40, 80 10, 100 25" stroke="#E5B45B" stroke-width="1.5" fill="none" opacity="0.15" />
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#waves)" />
+</svg>
