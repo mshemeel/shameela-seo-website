@@ -1,0 +1,291 @@
+.aboutPage {
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.aboutHero {
+  background-color: var(--color-primary-light);
+  padding: 6rem 0 4rem;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Common section styles */
+.biographySection,
+.skillsSection,
+.credentialsSection,
+.missionSection {
+  padding: 5rem 0;
+}
+
+.subtitle {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: var(--color-text-dark);
+}
+
+/* Biography section */
+.biographySection {
+  background-color: #fff;
+}
+
+.sectionContent {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.bioImageContainer {
+  position: relative;
+}
+
+.bioImage {
+  width: 100%;
+  height: 450px;
+  background-color: var(--color-background-light);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bioText p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+/* Skills section */
+.skillsSection {
+  background-color: var(--color-background-light);
+  text-align: center;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.skillCard {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skillCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.skillIcon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary);
+}
+
+.skillTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--color-text-dark);
+}
+
+.skillDescription {
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+/* Credentials section */
+.credentialsSection {
+  background-color: #fff;
+  text-align: center;
+}
+
+.credentialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.credentialCard {
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: var(--color-background-light);
+  transition: transform 0.3s;
+}
+
+.credentialCard:hover {
+  transform: translateY(-5px);
+}
+
+.credentialIcon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 1.5rem;
+  color: var(--color-primary);
+}
+
+.credentialTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-dark);
+}
+
+.credentialDate {
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+/* Mission section */
+.missionSection {
+  background-color: var(--color-primary-light);
+}
+
+.missionContent {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.missionText {
+  margin-bottom: 3rem;
+}
+
+.missionText p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.missionValues {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.valueItem {
+  text-align: center;
+}
+
+.valueIcon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 1rem;
+  color: var(--color-primary);
+}
+
+.valueTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .sectionContent {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .bioImageContainer {
+    order: 1;
+  }
+  
+  .bioTextContent {
+    order: 2;
+  }
+  
+  .heroTitle {
+    font-size: 2.8rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutHero {
+    padding: 4rem 0 3rem;
+  }
+  
+  .biographySection,
+  .skillsSection,
+  .credentialsSection,
+  .missionSection {
+    padding: 4rem 0;
+  }
+  
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .skillsGrid,
+  .credentialsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .missionValues {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+  
+  .skillsGrid,
+  .credentialsGrid {
+    grid-template-columns: 1fr;
+  }
+} 

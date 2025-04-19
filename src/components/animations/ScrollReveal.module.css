@@ -1,0 +1,77 @@
+.scrollReveal {
+  opacity: 0;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  will-change: transform, opacity;
+}
+
+/* Visible state for all animations */
+.visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) !important;
+}
+
+/* Animation direction variants */
+.fromBottom {
+  transform: translate3d(0, 30px, 0);
+}
+
+.fromTop {
+  transform: translate3d(0, -30px, 0);
+}
+
+.fromLeft {
+  transform: translate3d(-30px, 0, 0);
+}
+
+.fromRight {
+  transform: translate3d(30px, 0, 0);
+}
+
+.fade {
+  transform: translate3d(0, 0, 0);
+  opacity: 0;
+}
+
+/* Animation durations for cascading elements */
+.scrollReveal:nth-child(1) {
+  transition-duration: 0.6s;
+}
+
+.scrollReveal:nth-child(2) {
+  transition-duration: 0.7s;
+}
+
+.scrollReveal:nth-child(3) {
+  transition-duration: 0.8s;
+}
+
+.scrollReveal:nth-child(4) {
+  transition-duration: 0.9s;
+}
+
+.scrollReveal:nth-child(5) {
+  transition-duration: 1s;
+}
+
+/* Different animation speeds based on device size */
+@media (max-width: 768px) {
+  .scrollReveal {
+    transition-duration: 0.6s !important;
+  }
+  
+  .fromBottom {
+    transform: translate3d(0, 20px, 0);
+  }
+  
+  .fromTop {
+    transform: translate3d(0, -20px, 0);
+  }
+  
+  .fromLeft {
+    transform: translate3d(-20px, 0, 0);
+  }
+  
+  .fromRight {
+    transform: translate3d(20px, 0, 0);
+  }
+} 

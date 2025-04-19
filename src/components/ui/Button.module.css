@@ -1,0 +1,131 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  text-decoration: none;
+  border: none;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Button variants */
+.primary {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+}
+
+.primary:hover {
+  background-color: #3a457c;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.primary:active {
+  transform: translateY(-1px);
+}
+
+.secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+}
+
+.secondary:hover {
+  background-color: #f56376;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.secondary:active {
+  transform: translateY(-1px);
+}
+
+.outline {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.outline:hover {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.outline:active {
+  transform: translateY(-1px);
+}
+
+.text {
+  background-color: transparent;
+  color: var(--color-primary);
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.text:hover {
+  color: var(--color-secondary);
+  background-color: transparent;
+  transform: translateX(5px);
+}
+
+/* Button sizes */
+.small {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.medium {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+.large {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+/* Full width option */
+.fullWidth {
+  width: 100%;
+}
+
+/* Ripple effect */
+.button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: -1;
+}
+
+.button:active::after {
+  width: 300px;
+  height: 300px;
+  opacity: 1;
+  transition: all 0.6s ease-out;
+}
+
+/* Disabled state */
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.button:disabled:hover {
+  transform: none;
+  box-shadow: none;
+} 
