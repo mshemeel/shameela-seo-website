@@ -1,6 +1,5 @@
 import React from 'react';
 import { Metadata } from 'next';
-import Link from 'next/link';
 import { FaCheck, FaSearchDollar, FaChartLine, FaCode, FaComments, FaSlidersH } from 'react-icons/fa';
 import Container from '@/components/layout/Container';
 import Button from '@/components/ui/Button';
@@ -78,7 +77,7 @@ const ServicesPage = () => {
       id: 'link-building',
       title: 'Link Building & Outreach',
       icon: <FaSlidersH />,
-      description: 'Build high-quality backlinks to increase your website\'s authority and improve search rankings.',
+      description: 'Build high-quality backlinks to increase your website&apos;s authority and improve search rankings.',
       features: [
         'Competitor backlink analysis',
         'Outreach campaign management',
@@ -123,7 +122,7 @@ const ServicesPage = () => {
     {
       number: 4,
       title: 'Monitoring & Reporting',
-      description: 'We continuously monitor your website\'s performance, tracking key metrics and making adjustments to ensure optimal results. Regular reports keep you informed of progress.'
+      description: 'We continuously monitor your website&apos;s performance, tracking key metrics and making adjustments to ensure optimal results. Regular reports keep you informed of progress.'
     },
     {
       number: 5,

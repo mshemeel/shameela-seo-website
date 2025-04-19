@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
 import Container from '../layout/Container';
 import Button from '../ui/Button';
 import styles from './Hero.module.css';
@@ -29,7 +28,7 @@ export default function Hero(): React.ReactElement {
         <div className={styles.content}>
           <div className={`${styles.textContent} ${isVisible ? styles.visible : ''}`}>
             <h1 className={styles.heading}>
-              Hey, I'm <span className={styles.highlight}>Shameela Sheriff</span>
+              Hey, I&apos;m <span className={styles.highlight}>Shameela Sheriff</span>
             </h1>
             <h2 className={styles.subheading}>
               Best Digital Marketing Strategist in Palakkad | SEO Expert
