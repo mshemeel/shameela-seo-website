@@ -1,0 +1,54 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.section {
+  margin-bottom: 80px;
+}
+
+.section h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #0F766E;
+}
+
+.instruction {
+  margin-bottom: 20px;
+  font-style: italic;
+  color: #64748B;
+}
+
+.demoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: #F8FAFC;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.content {
+  font-size: 18px;
+  color: #334155;
+}
+
+@media (max-width: 768px) {
+  .demoGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .card {
+    height: 120px;
+  }
+} 

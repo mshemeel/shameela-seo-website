@@ -1,0 +1,44 @@
+.slideIn {
+  opacity: 0;
+  transition: transform ease, opacity ease;
+  will-change: transform, opacity;
+}
+
+/* Visible state for all animations */
+.visible {
+  opacity: 1 !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+
+/* Direction specific styles */
+.up, .down, .left, .right {
+  opacity: 0;
+}
+
+/* Animation durations for cascading elements */
+.slideIn:nth-child(1) {
+  transition-duration: 0.6s;
+}
+
+.slideIn:nth-child(2) {
+  transition-duration: 0.7s;
+}
+
+.slideIn:nth-child(3) {
+  transition-duration: 0.8s;
+}
+
+.slideIn:nth-child(4) {
+  transition-duration: 0.9s;
+}
+
+.slideIn:nth-child(5) {
+  transition-duration: 1s;
+}
+
+/* Different animation speeds based on device size */
+@media (max-width: 768px) {
+  .slideIn {
+    transition-duration: 0.5s !important;
+  }
+} 
